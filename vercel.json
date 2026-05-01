@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "functions": {
+    "api/stock.js":     { "memory": 128, "maxDuration": 10 },
+    "api/options.js":   { "memory": 128, "maxDuration": 10 },
+    "api/ai.js":        { "memory": 128, "maxDuration": 25 },
+    "api/recommend.js": { "memory": 128, "maxDuration": 15 }
+  },
+  "routes": [
+    { "src": "/api/stock",     "dest": "/api/stock.js" },
+    { "src": "/api/options",   "dest": "/api/options.js" },
+    { "src": "/api/ai",        "dest": "/api/ai.js" },
+    { "src": "/api/recommend", "dest": "/api/recommend.js" },
+    { "src": "/mobile",        "dest": "/mobile.html" },
+    { "src": "/m",             "dest": "/mobile.html" }
+  ]
+}
